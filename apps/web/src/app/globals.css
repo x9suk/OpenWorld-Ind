@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 15 23 42;
+  }
+  .dark {
+    --background: 15 23 42;
+    --foreground: 248 250 252;
+  }
+  body {
+    @apply bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50 transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .gradient-india {
+    @apply bg-gradient-to-br from-saffron-500 via-white to-green-500 dark:from-saffron-700 dark:via-slate-900 dark:to-green-700;
+  }
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-2;
+  }
+  .section-subtitle {
+    @apply text-lg text-slate-600 dark:text-slate-400 mb-8;
+  }
+}
+
+.leaflet-container {
+  @apply rounded-xl;
+  height: 100%;
+  width: 100%;
+}

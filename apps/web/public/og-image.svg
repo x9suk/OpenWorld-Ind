@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Gradient accents -->
+  <circle cx="200" cy="315" r="300" fill="#FF6B35" opacity="0.08"/>
+  <circle cx="1000" cy="315" r="250" fill="#3B82F6" opacity="0.08"/>
+  <!-- Logo -->
+  <g transform="translate(540,180)">
+    <path d="M60 120C60 120 105 81 105 51C105 26.147 84.853 6 60 6C35.147 6 15 26.147 15 51C15 81 60 120 60 120Z" fill="#FF6B35"/>
+    <circle cx="60" cy="51" r="18" fill="white"/>
+  </g>
+  <text x="600" y="320" font-family="'Inter','Segoe UI',sans-serif" font-size="64" font-weight="800" fill="white" text-anchor="middle" letter-spacing="-1">OpenWorld India</text>
+  <text x="600" y="370" font-family="'Inter','Segoe UI',sans-serif" font-size="24" font-weight="400" fill="white" text-anchor="middle" opacity="0.7">Explore India Through Maps, Stories, Culture, and History</text>
+  <rect x="400" y="420" width="400" height="2" rx="1" fill="#FF6B35" opacity="0.5"/>
+  <text x="600" y="460" font-family="'Inter','Segoe UI',sans-serif" font-size="16" font-weight="400" fill="white" text-anchor="middle" opacity="0.4">openworld-india.dev</text>
+</svg>

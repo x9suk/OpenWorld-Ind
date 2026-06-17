@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" fill="none">
+  <rect width="192" height="192" rx="24" fill="#1e293b"/>
+  <g transform="translate(56,44)">
+    <path d="M40 80C40 80 70 54 70 34C70 17.431 56.569 4 40 4C23.431 4 10 17.431 10 34C10 54 40 80 40 80Z" fill="#FF6B35"/>
+    <circle cx="40" cy="34" r="12" fill="white"/>
+  </g>
+  <text x="96" y="140" font-family="'Inter','Segoe UI',sans-serif" font-size="24" font-weight="700" fill="white" text-anchor="middle">OpenWorld</text>
+  <text x="96" y="162" font-family="'Inter','Segoe UI',sans-serif" font-size="14" font-weight="500" fill="white" text-anchor="middle" opacity="0.6">INDIA</text>
+</svg>

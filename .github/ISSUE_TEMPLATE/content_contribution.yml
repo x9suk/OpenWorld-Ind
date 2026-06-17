@@ -1,0 +1,72 @@
+name: Content Contribution
+description: Submit new data content (states, cities, monuments, foods, festivals, events)
+labels: ["data", "contribution"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing data to OpenWorld India!
+
+  - type: dropdown
+    id: content_type
+    attributes:
+      label: Content Type
+      options:
+        - State / Union Territory
+        - City
+        - Monument / Heritage Site
+        - Food / Cuisine
+        - Festival
+        - Historical Event
+        - Photo
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Name of the place/item/event
+    validations:
+      required: true
+
+  - type: textarea
+    id: data
+    attributes:
+      label: Data
+      description: |
+        Provide the data in structured format. Include all relevant fields.
+        See docs/data-contribution.md for schema reference.
+      placeholder: |
+        {
+          "name": "Example Monument",
+          "stateId": "state-id",
+          "description": "...",
+          "builtBy": "...",
+          "builtIn": "12th century",
+          "coordinates": { "lat": 28.5, "lng": 77.2 }
+        }
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Links to official or academic sources for this data
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Contribution Checklist
+      options:
+        - label: I confirm this data is accurate to the best of my knowledge
+          required: true
+        - label: I have provided sources for all factual claims
+          required: true
+        - label: I have permission to submit any included images (own work or CC-licensed)
+          required: true
+        - label: I agree to license this contribution under CC-BY-SA 4.0
+          required: true

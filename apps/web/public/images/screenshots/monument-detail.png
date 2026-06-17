@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#1e293b"/>
+  <text x="400" y="220" font-family="'Inter',sans-serif" font-size="28" font-weight="600" fill="#94a3b8" text-anchor="middle">OpenWorld India</text>
+  <text x="400" y="260" font-family="'Inter',sans-serif" font-size="16" font-weight="400" fill="#64748b" text-anchor="middle">Monument Detail Screenshot</text>
+  <rect x="150" y="300" width="500" height="2" rx="1" fill="#334155"/>
+  <text x="400" y="330" font-family="'Inter',sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">History, architecture, visitor info tabs with gallery and map</text>
+</svg>

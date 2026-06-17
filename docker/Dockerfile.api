@@ -1,0 +1,27 @@
+FROM node:20-alpine AS base
+RUN npm install -g pnpm@9
+
+FROM base AS deps
+WORKDIR /app
+COPY package.json pnpm-workspace.yaml turbo.json ./
+COPY apps/api/package.json apps/api/
+COPY packages/ packages/
+RUN pnpm install --frozen-lockfile
+
+FROM base AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY --from=deps /app/apps/api/node_modules ./apps/api/node_modules
+COPY --from=deps /app/packages/ ./packages/
+COPY apps/api ./apps/api
+COPY packages/ ./packages/
+RUN pnpm --filter @openworld/api build
+
+FROM base AS runner
+WORKDIR /app
+COPY --from=builder /app/apps/api/dist ./apps/api/dist
+COPY --from=builder /app/apps/api/package.json ./apps/api/
+COPY --from=builder /app/packages/ ./packages/
+RUN mkdir -p /app/apps/api/data
+EXPOSE 4000
+CMD ["node", "apps/api/dist/index.js"]

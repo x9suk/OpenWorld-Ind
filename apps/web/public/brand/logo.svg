@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none">
+  <!-- Map pin icon -->
+  <g transform="translate(4,4)">
+    <path d="M16 32C16 32 28 22 28 14C28 7.37258 22.6274 2 16 2C9.37258 2 4 7.37258 4 14C4 22 16 32 16 32Z" fill="#FF6B35" stroke="#E55A2B" stroke-width="1.5"/>
+    <circle cx="16" cy="14" r="5" fill="white"/>
+  </g>
+  <!-- OpenWorld India text -->
+  <text x="42" y="30" font-family="'Inter','Segoe UI',sans-serif" font-size="20" font-weight="700" fill="currentColor" letter-spacing="-0.3">OpenWorld</text>
+  <text x="42" y="46" font-family="'Inter','Segoe UI',sans-serif" font-size="11" font-weight="500" fill="currentColor" opacity="0.6" letter-spacing="2">INDIA</text>
+</svg>

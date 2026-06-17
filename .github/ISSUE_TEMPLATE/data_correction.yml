@@ -1,0 +1,56 @@
+name: Data Correction
+description: Report inaccurate or outdated data
+labels: ["data", "correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve our data accuracy!
+
+  - type: input
+    id: place
+    attributes:
+      label: Place / Page
+      description: Which place or page has incorrect data?
+      placeholder: Taj Mahal
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue Type
+      options:
+        - Inaccurate description
+        - Wrong coordinates
+        - Outdated information
+        - Broken image
+        - Typo / spelling error
+        - Missing data
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current (Incorrect) Data
+      description: What does it currently say?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed Correction
+      description: What should it say instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Provide links to official or authoritative sources supporting this correction
+    validations:
+      required: true
