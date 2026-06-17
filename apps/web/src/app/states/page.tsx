@@ -112,7 +112,7 @@ export default function StatesPage() {
                   population={(state.population / 10000000).toFixed(1) + ' Cr'}
                   area={state.area.toLocaleString('en-IN') + ' km²'}
                   languageCount={state.languages.length}
-                  imageUrl={getStateImage(state.imageUrl)}
+                  imageUrl={resolveStateImage(state)}
                   slug={stateSlugs[state.name] || state.name.toLowerCase().replace(/\s+/g, '-')}
                 />
               </motion.div>
